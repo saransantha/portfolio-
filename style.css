@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+background-color: black(0, 0, 0);
+ background-image: linear-gradient(
+    to right,
+    rgb(84, 140, 162),
+    rgb(232, 192, 220)
+  ); 
+    font-size: 16px;
+    font-family: "Suisseintl Local", sans-serif;
+  }
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 3%;
+  }
+  .nav1{
+    display: flex;
+    gap: 20px;
+  }
+  .nav1 a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .icons{
+    display: flex;
+    gap: 10px;
+  }
+  .icons a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.personal{
+    display: flex;
+    padding: 5% 3% 0% 3%;
+}
+.personalimg{
+    width: 250px;
+    border-radius: 10%;
+    box-shadow: 7px 6px 10px 6px;
+}
+.personal-para{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    width: 55%;
+    padding: 0% 0 0 3%;
+}
+.personal-para h1{
+    font-size: 2.5rem;
+}
+.personal-para h4{
+    font-size: 1.3rem;
+}
+.personal-para p{
+    line-height: 1.3;
+}
+.boxes{
+  display: flex;
+  margin: 3% 0%;
+  justify-content: center;
+  gap: 20px;
+}
+.education, .Skills, .Otherskill{
+  border: 5px solid rgb(109, 106, 106);
+  
+  width: 25%;
+  border-radius: 10px;
+}
+.education:hover, .Skills:hover, .Otherskill:hover{
+  box-shadow: 1px 1px 15px 5px grey;
+  transition: 0.5s;
+}
+.education h1, .Skills h1, .Otherskill h1{
+  border-bottom: 5px solid rgb(109, 106, 106);
+  padding: 10px;
+  text-align: center;
+  font-size: 1.7rem;
+}
+.education div, .Skills div, .Otherskill div{
+  padding: 20px;
+}
+.education h4, .Skills, .Otherskill{
+  font-size: 1.3rem;
+}
+.education p{
+  font-size: 0.9rem;
+  padding: 2%;
+  line-height: 1.5;
+}
+.Skills h4, .Otherskill h4{
+  line-height: 2;
+}
+.projects{
+  margin: 5% 3%;
+}
+.projecthead{
+  font-size: 2.5rem;
+  text-align: center;
+}
+.project1{
+  display: flex;
+  gap: 30px;
+  padding: 3% 0%;
+  justify-content: center;
+}
+.project1img{
+  width: 30%;
+  border-radius: 5px;
+}
+.project1 p{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+}
+.project2{
+  padding: 3% 0;
+}
+.project2 h1{
+  font-size: 2.5rem;
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer1{
+  background-color: rgb(216, 217, 241);
+  display: flex;
+  padding: 1% 3%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1200px){
+    .nav{
+        margin:3% 3%;
+    }
+    .personal-para{
+        padding: 0 0 0 0;
+    }
+    .boxes{
+      margin: 3% 3%;
+    }
+    .education, .Skills, .Otherskill{
+      width: 100%;
+    }
+    .project1{
+      justify-content:flex-start;
+    }
+    .project1img{
+      width: 35%;
+    }
+    .project1 p{
+      width: 100%;
+      text-align: justify;
+    }
+}
+@media screen and (max-width:992px){
+    .personal{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .personal-para{
+        width: 85%;
+    }
+    .personalimg{
+        width:350px;
+    }
+    .personal-para h1{
+        font-size: 2rem;
+    }
+    .boxes{
+      flex-wrap: wrap;
+      margin: 5% 3%;
+    }
+    .education, .Skills, .Otherskill{
+      width: 48%;
+    }
+    .project1img{
+      width: 45%;
+    }
+    .project1, .project2{
+      padding: 5% 0;
+    }
+    .project1 p{
+      text-align: justify;
+    }
+    .project2 h1{
+      width: 95%;
+    }
+}
+@media screen and (max-width:768px){
+  .nav{
+    margin: 5% 3%;
+  }
+  .personal-para{
+    width: 100%;
+  }
+  .boxes{
+    margin: 7% 3%;
+  }
+  .education, .Skills, .Otherskill{
+    width: 80%;
+  }
+  .project1{
+    flex-direction: column;
+    align-items: center;
+    padding: 7% 0;
+  }
+  .project1img{
+    width: 60%;
+  }
+  .project1 p{
+    width: 80%;
+  }
+  .project2 h1{
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width:426px){
+  .nav{
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .personal-para h1, .education h1, .Skills h1, .Otherskill h1{
+    font-size: 1.5rem;
+  }
+  .personal-para h4, .education h4, .Skills h4, .Otherskill h4{
+    font-size: 1.1rem;
+  }
+  .personal-para p{
+    font-size: 0.9rem;
+  }
+  .personalimg{
+    width: 290px;
+  }
+  .boxes{
+    margin: 10% 3%;
+  }
+  .education, .Skills, .Otherskill{
+    width: 100%;
+  }
+  .project1img{
+    width: 90%;
+  }
+  .project1 p{
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .projecthead{
+    font-size: 1.5rem;
+  }
+  .project2 h1{
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}
